@@ -1,6 +1,8 @@
 import os
 from flask import Flask, render_template
 
+#lol
+
 app =  Flask(__name__)
 app.secret_key="annabanana"
 app.config.from_object(__name__)
