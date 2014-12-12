@@ -4,23 +4,23 @@ app =  Flask(__name__)
 app.secret_key="annabanana"
 app.config.from_object(__name__)
 
-@app.route('/', methods=['GET'])	
+@app.route('/')	
 def allimages():
 	return render_template("index.html")
 
-@app.route('/research', methods=['GET'])
+@app.route('/research')
 def research():
 	return render_template("research.html")
 
-@app.route('/educator', methods=['GET'])
+@app.route('/educator')
 def educator():
 	return render_template("educator.html")
 
-@app.route('/softwareengineer', methods=['GET'])
+@app.route('/softwareengineer')
 def softwareengineer():
 	return render_template("softwareengineer.html")
 
-@app.route('/play', methods=['GET'])
+@app.route('/play')
 def play():
 	return render_template("play.html")
 
