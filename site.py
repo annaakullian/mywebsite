@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for, send_from_directory, make_response
+from flask import Flask, render_template
 
 app =  Flask(__name__)
 app.secret_key="annabanana"
@@ -26,4 +26,7 @@ def play():
 
 if __name__ == '__main__':
 	PORT = int(os.environ.get("PORT", 5000))
+
 	app.run(debug=True, host="0.0.0.0", port=PORT)
+
+	
